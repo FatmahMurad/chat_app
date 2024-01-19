@@ -1,0 +1,12 @@
+{
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "googleLogin": "Google Login",
+    "userName":"username",
+    "errorFetchingUsers":"Error Fetching Users",
+    "users":"Users",
+    "photoGallery": "Photo Gallery",
+    "cameraImage": "Camera Image",
+    "cancel": "Cancel"
+}

@@ -2,7 +2,7 @@ name: chat
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.2.3 <4.0.0'
+  sdk: ">=3.2.3 <4.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -30,11 +30,23 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  cupertino_icons: ^1.0.2
+  firebase_core: ^2.23.0 # enabling connecting to multiple Firebase apps
+  firebase_auth: ^4.14.1 # enabling authentication using passwords, phone numbers and identity providers like Google, Facebook and Twitter
+  google_sign_in: ^6.1.6 # a secure authentication system for signing in with a Google
+  cloud_firestore: ^4.13.1 # a cloud-hosted, noSQL database with live synchronization
+  firebase_storage: ^11.5.2 # object storage service ( images, videos )
+  shared_preferences: ^2.2.2 # local storage on device
+  flutter_riverpod: ^2.4.8 # riverpod state managment
+  go_router: ^12.1.1 # google screen routes managment
+  google_fonts: ^6.1.0 # access fonts from fonts.google.com
+  image_picker: ^1.0.4 # access gallery and take images from camera
+  intl: ^0.18.1 #internationalized/localized messages, date and number formatting and parsing
+  uuid: ^4.3.3
+  path: ^1.8.3
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
@@ -52,16 +64,15 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  generate: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - lib/assets/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
